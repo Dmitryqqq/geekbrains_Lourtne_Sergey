@@ -4,3 +4,14 @@
 # последующих строках записаны N целых чисел Ai
 # . Последняя строка
 # содержит число X
+
+from random import randint
+
+n = int(input('Введите размер массива: '))
+lst = [randint(0, n) for i in range(n)]
+print(lst)
+
+a = int(input('Число: '))
+
+m = min(lst, key=lambda x: abs(x-a))
+print(f'Ближайшее число в массиве: {m}')
