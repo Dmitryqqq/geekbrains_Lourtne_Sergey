@@ -76,20 +76,20 @@ from random import randint
 # чисел. Все числа списка находятся на разных
 # строках
 
-def pair(lst):
-    count = 0
-    myset = set(lst)
-    for i in myset:
-        x = lst.count(i)
-        count += x // 2
+# def pair(lst):
+#     count = 0
+#     myset = set(lst)
+#     for i in myset:
+#         x = lst.count(i)
+#         count += x // 2
 
-    return count
+#     return count
 
 
-n = int(input('Введите количество элементов списка: '))
-lst1 = [randint(1, 9) for _ in range(n)]
-print(lst1)
-print(pair(lst1))
+# n = int(input('Введите количество элементов списка: '))
+# lst1 = [randint(1, 9) for _ in range(n)]
+# print(lst1)
+# print(pair(lst1))
 
 
 # Два различных натуральных числа n и m называются
