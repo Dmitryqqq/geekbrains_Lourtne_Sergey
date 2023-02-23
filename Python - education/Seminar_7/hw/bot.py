@@ -4,13 +4,13 @@ import json
 films=[]
 
 def save():
-    with open("films.json","w",encoding="utf-8") as fh:
+    with open("Python - education/Seminar_7/films.json","w",encoding="utf-8") as fh:
         fh.write(json.dumps(films,ensure_ascii=False))
     print("Наша фильмотека была успешно сохранена в файле films.json")
 
 def load():
     global films
-    with open("films.json","r",encoding="utf-8") as fh:
+    with open("Python - education/Seminar_7/films.json","r",encoding="utf-8") as fh:
         films=json.load(fh)
     print("Фильмотека была успешно загружена")   
 
