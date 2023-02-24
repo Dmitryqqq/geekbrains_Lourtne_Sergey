@@ -38,6 +38,10 @@ while True:
         cmds.load()
     elif command=="/clear":
         cmds.clear()
+    elif command=="/red":
+        cmds.red()
+    elif command=="/show":
+        cmds.show()
     elif command=="/help":
         print('''Список комманд:\n
         /stop - закончить работу;

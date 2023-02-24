@@ -41,3 +41,23 @@ def all():
             print(f'\nАбонент №{count}')
             for key, value in i.items():
                 print(f'{key} {value}')
+
+def red():
+    n = int(input("Введите номер абонента, которого вы хотите отредактировать: "))
+    try:
+        f = input("Введите актуальную фамилию: ")
+        g.phonebook[n-1].update({'Фамилия:' : f})
+        name = input("Введите актуальное имя: ")
+        g.phonebook[n-1].update({'Имя:' : name})
+        secondName = input("Введите актуальное отчество: ")
+        g.phonebook[n-1].update({'Отчество:' : secondName})
+        number = input("Введите актуальный мобильный телефон: ")
+        g.phonebook[n-1].update({'Телефон:' : number})
+            
+        print("Абонент успешно изменён!\n")
+    except:
+            print("Нет такого Абонента(")
+
+def show():
+    n = int(input("Введите номер абонента: "))
+    print(f'\n{g.phonebook[n-1]}')
