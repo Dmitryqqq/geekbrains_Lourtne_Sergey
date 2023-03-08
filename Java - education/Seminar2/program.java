@@ -97,7 +97,7 @@ public class program {
         try{
             FileWriter writer = new FileWriter(file,false);
             for (int i = 0; i < n; i++){
-                writer.write(text);
+                writer.write("Привет!");
                 writer.write("\n");
             }
             writer.close();

@@ -30,7 +30,7 @@ public class task1 {
         String file_name = "Java - education/Seminar2/hw/log.txt";
         File file = new File(file_name);
         try{
-            FileWriter writer = new FileWriter(file,true);
+            FileWriter writer = new FileWriter(file,false);
             while(!isSorted) {
                 isSorted = true;
                 for (int i = 0; i < mas.length-1; i++) {
@@ -40,9 +40,10 @@ public class task1 {
                         buf = mas[i];
                         mas[i] = mas[i+1];
                         mas[i+1] = buf;
+                        writer.write(Arrays.toString(mas));
+                        writer.write("\n");
                     }
-                    writer.write(i);
-                    writer.write("\n");
+                    
                 }
             }
             writer.close();
