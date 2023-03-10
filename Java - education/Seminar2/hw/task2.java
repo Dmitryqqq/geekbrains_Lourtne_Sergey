@@ -2,7 +2,6 @@ package hw;
  
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.Arrays;
 import java.util.Scanner;
  
 public class task2 {
@@ -39,8 +38,7 @@ public class task2 {
         String[] list = str.toString().split("\n");
 
         for (int i = 0; i < list.length; i+=3) {
-            
-            System.out.println("Студент" + list[i]+ "получил" + list[i+1] + "по предмету" + list[i+2] + ".");
+            System.out.println("Студент " + list[i].replace("\"", "") + " получил " + list[i + 1].replace("\"", "") + " по предмету " + list[i + 2].replace("\"", "") + ".");
         }
         
     }
